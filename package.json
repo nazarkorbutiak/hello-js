@@ -1,0 +1,26 @@
+{
+  "name": "hello",
+  "version": "1.0.0",
+  "description": "test project for js",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "./node_modules/.bin/static-server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nazarkorbutiak/hello-js.git"
+  },
+  "keywords": [
+    "javaskript"
+  ],
+  "author": "nazar",
+  "license": "GPL-3.0",
+  "bugs": {
+    "url": "https://github.com/nazarkorbutiak/hello-js/issues"
+  },
+  "homepage": "https://github.com/nazarkorbutiak/hello-js#readme",
+  "devDependencies": {
+    "static-server": "^2.2.1"
+  }
+}
