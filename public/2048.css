@@ -8,11 +8,11 @@ body {
     align-items: center;
 }
 table, td {
-    border: 1px solid black;
+    border: 10px solid rgb(78, 24, 24);
     border-collapse: collapse;
 }
 td {
-    border: 1px solid black;
+    border:10px solid rgb(26, 25, 9);
     width : 100px;
     height: 100px;
     text-align: center;

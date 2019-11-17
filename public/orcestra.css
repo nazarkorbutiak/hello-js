@@ -1,0 +1,12 @@
+div#keys div {
+    float: left;
+    width: 30px;
+    height: 30px;
+    border: 1px solid red;
+    margin: 10px;
+
+
+}
+div#keys div.active {
+    background-color: lightpink;
+}
