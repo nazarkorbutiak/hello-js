@@ -1,0 +1,32 @@
+table {
+    border: 10px solid rgb(78, 24, 24);
+    border-collapse: collapse;
+    background-image: url( "bg-move-box.jpg" ) ;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+td {
+    border:1px solid white;
+    width : 60px;
+    height: 60px;
+    text-align: center;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    
+}
+td.box-01{
+    background-image: url( "box0.png");
+
+}
+td.box-02{
+    background-image: url( "box1.png");
+}
+td.box-03{
+    background-color: tomato;
+}
+
+td.z{
+    background-size: 10% 10%;
+}
