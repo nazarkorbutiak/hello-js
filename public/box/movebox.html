@@ -10,11 +10,11 @@
 </head>
 <body>
 
-    <table id="move the box">
+    <table id="move-the-box" onclick="boardClick(event)" >
          <tr>
-             <td class="box-01"></td>
-             <td class="box-02 z"></td>
-             <td class="box-03"></td>
+             <td ></td>
+             <td></td>
+             <td></td>
              <td></td>
              <td></td>
              <td></td>
@@ -84,6 +84,12 @@
              <td></td>
          </tr> 
     </table>
-    
+    <div id="buttons">
+        <button onclick="moveUp()" >U</button>
+        <button onclick="moveLeft()"> L</button>
+        <button onclick="moveRigth()">R</button>
+        <button onclick="moveDown()">D</button>
+    </div>
+    <script src="movebox.js"></script>
 </body>
 </html>

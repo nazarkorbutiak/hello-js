@@ -16,17 +16,17 @@ td {
     background-size: cover;
     
 }
-td.box-01{
+td.box-1{
     background-image: url( "box0.png");
 
 }
-td.box-02{
+td.box-2{
     background-image: url( "box1.png");
 }
-td.box-03{
+td.box-3{
     background-color: tomato;
 }
 
-td.z{
-    background-size: 10% 10%;
+div#buttons{
+    text-align: center;
 }
