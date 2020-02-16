@@ -16,6 +16,13 @@ td {
     background-size: cover;
     
 }
+.box{
+    border: 1px solid white;
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    
+}
 td.box-1{
     background-image: url( "box0.png");
 
