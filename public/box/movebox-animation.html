@@ -62,48 +62,61 @@
              <td></td>
              <td></td>
              <td></td>
-             <td id="td2"></td>
+             <td></td>
              <td></td>
          </tr>
+         
          <tr>
              <td></td>
              <td></td>
              <td></td>
-             <td></td>
-             <td></td>
-             <td></td>
-             <td></td>
-         </tr>
-         <tr>
-             <td></td>
-             <td></td>
-             <td></td>
-             <td></td>
-             <td></td>
+             <td class="box-1"></td>
+             <td class="box-2"></td>
              <td></td>
              <td></td>
          </tr> 
     </table>
+
     <button occlick="testMove()">Clic</button>
+
     <script src="jquery-3.4.1.min.js"></script>
+
     <script>
         function testMove() {
-            moveBox( '#td1', '#td2', 'box-1');
-            moveBox( '#td2', '#td1', 'box-2');
+            moveBox( [7, 4],[7, 6] );
+            moveBox( [7, 6],[7, 4] );
         }
-            function moveBox( s, d, b ){
-            let $S = $( s );
-            let $D = $( d );
+            function moveBox( s, d ){
+                let $S = $(
+                    $( '#move-the-box' )[0]
+                .rows[ s[0]]
+                    .cells[ s[1] ]
+                    );
+                    let $D = $(
+                        $( '#move-the-box' )[0]
+                .rows[ d[0]]
+                    .cells[ d[1] ]
+                        );
+                        
+                    let offS = $S.offset();
+                    let offD = $D.offset();
+                    let $B = $S[0].className;
+
+                    
+            
             let offS = $S.offset();
-            let offD = $D.offset();
+            
+            
             let $BOX = $('<div>')
                 .addClass('box')
-                .addClass( b ) 
+               .addClass( b ) 
                 .css( offS )
-                .appendTo('body')   
+                .appendTo('body')
+                $S[0].className="";   
             $BOX.animate( offD, 1000, function(){
                 $BOX.remove();
-            });
+                $D[0].className="$B";
+           });
         }
     </script>
        
