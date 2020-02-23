@@ -1,18 +1,4 @@
-var bRow = 8;
-var bCol = 7;
 
-var board = [
-    [ 0, 0, 0, 0, 0, 0, 0 ],
-    [ 0, 0, 0, 0, 0, 0, 0 ],
-    [ 0, 0, 0, 0, 0, 0, 0 ],
-    [ 0, 0, 0, 0, 0, 0, 0 ],
-    [ 0, 0, 0, 0, 0, 0, 0 ],
-    [ 0, 0, 0, 0, 0, 0, 0 ],
-    [ 0, 0, 0, 0, 0, 0, 0 ],
-    [ 0, 1, 2, 0, 1, 0, 0 ]
-];
-
-var elBoard = document.querySelectorAll( 'table#move-the-box td' );
 var selBox = [];
 
 var animationCounter = 0;
@@ -66,29 +52,16 @@ function boom() {
     let bV = boomV();
     return ( bH || bV );
 }//- Має щось Бути!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+//if( Boom ){
+ ///   setTimeout( function(){clearBoom();}, 500)
+    //schosi mae bytu!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+//clearBoom();
+    //gravitation();
+    //while ( animationCounter>0) {};
+    //let Boom = boom();
 
 
-function drawBoard() {
-    clearBoom();
-    gravitation();
-    while ( animationCounter>0) {};
-    let Boom = boom();
-    for ( let r = 0; r < bRow; r++ ) {
-        for ( let c=0; c< bCol; c++ ){
-            let i = bCol * r +c;
-            if (board[r][c] == 0 ) {
-                elBoard[i].className ='';
-            }else{
-                elBoard[i].className ='box-' + board[r][c];
-            }
-        }
-    }
-    if( Boom ){
-        setTimeout( function(){clearBoom();}, 500)
-        //schosi mae butu!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-    }
-}
-    
+  
 
 function boardClick( e ) {
     let r =  e.target.parentNode.rowIndex;

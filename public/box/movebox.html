@@ -5,12 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
-    <link rel="stylesheet" href="movebox.css">
     <link rel="stylesheet" href="stgame.css">
+    <link rel="stylesheet" href="movebox.css">
 </head>
 <body>
 
-    <table id="move-the-box" onclick="boardClick(event)" >
+    <table id="move-the-box"  onmouseover="mouseOver(event)" >
          <tr>
              <td ></td>
              <td></td>
@@ -85,11 +85,17 @@
          </tr> 
     </table>
     <div id="buttons">
-        <button onclick="moveUp()" >U</button>
-        <button onclick="moveLeft()"> L</button>
-        <button onclick="moveRigth()">R</button>
-        <button onclick="moveDown()">D</button>
+        <div id="btnU"onclick="moveUp()" ><span>&uArr;</span></div>
+        <div id="btnL"onclick="moveLeft()"><span> &lArr;</span></div>
+        <div id="btnR"onclick="moveRigth()"><span>&rArr;</span></div>
+        <div id="btnD"onclick="moveDown()"><span>&dArr;</span></div>
     </div>
-    <script src="movebox.js"></script>
+    <script src="jquery-3.4.1.min.js"></script>
+    <script src="move-the-box-board.js"></script>
+    <script src="move-the-box-handler.js"></script>
+    <script>
+        drawBoard();
+    </script>
+
 </body>
 </html>

@@ -8,8 +8,8 @@ table {
 }
 td {
     border:1px solid white;
-    width : 60px;
-    height: 60px;
+    width : 81px;
+    height: 81px;
     text-align: center;
     background-repeat: no-repeat;
     background-position: center center;
@@ -18,8 +18,8 @@ td {
 }
 .box{
     position: absolute;
-    width: 80px;
-    height: 80px;
+    width: 81px;
+    height: 81px;
     
 }
 td.box-1{
@@ -34,5 +34,60 @@ td.box-3{
 }
 
 div#buttons{
-    text-align: center;
+    display: grid;
+    width: 81px;
+    height: 81px;
+    border: 1px solid red;
+    background-color: rgba(255, 255, 255, 0.7);
+
+    position: absolute;
+    top: -300px;
+    left: -300px;
+
+}
+div#buttons div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 27px ;
+    height:27px ;
+    cursor: pointer;
+    color: black;
+    font-weight: bolder;
+    font-size: 20px;
+}
+div#buttons div span {
+        color: color;
+        font-weight:bolder;
+        font-size:20px;
+    }
+    
+
+
+
+div#btnU{
+    grid-column-start: 2;
+    grid-column-end: 2;
+    grid-row-start:1 ;
+    grid-row-end: 1;
+
+
+}
+div#btnD{
+    grid-column-start: 2;
+    grid-column-end: 2;
+    grid-row-start:3;
+    grid-row-end: 3;
+}
+div#btnL{
+    grid-column-start: 1;
+    grid-column-end: 1;
+    grid-row-start:2 ;
+    grid-row-end: 2;
+}
+div#btnR{
+    grid-column-start: 3;
+    grid-column-end: 3;
+    grid-row-start:2 ;
+    grid-row-end: 2;
 }
