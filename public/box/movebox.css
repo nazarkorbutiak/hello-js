@@ -30,7 +30,17 @@ td.box-2{
     background-image: url( "box1.png");
 }
 td.box-3{
-    background-color: tomato;
+    background-image: url( "container.png");
+}
+td.box-4{
+    background-image: url( "redbox.png");
+    
+}
+td.box-5{
+    background-image: url( "ironbox.png");
+}
+td.box-3{
+    background-image: url( "box3.jpeg");
 }
 
 div#buttons{
