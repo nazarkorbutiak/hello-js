@@ -36,7 +36,7 @@ function moveUp(){
 }
 
 function moveLeft(){
-    if ( selBox.length > 0 && selBox[0]<bCol-1){
+    if ( selBox.length > 0 && selBox[0]< bCol-1){
         let r = selBox [0];
         let c = selBox [1];
         if ( board[r][c-1] == 0){
@@ -54,7 +54,7 @@ function moveLeft(){
 }
 
 function moveRigth(){
-    if ( selBox.length > 0 && selBox[0]<bCol-1){
+    if ( selBox.length > 0 && selBox[0]< bCol+ 1){
         let r = selBox [0];
         let c = selBox [1];
         if ( board[r][c+1] == 0){
@@ -72,12 +72,12 @@ function moveRigth(){
 }
 
 function moveDown(){
-    if ( selBox.length > 0 && selBox[0] < bRow-1){
+    if ( selBox.length > 0 && selBox[0] < bRow - 1){
         let r = selBox [0];
         let c = selBox [1];
-        if ( board[r-1][c] == 0){
+        if ( board[r+1][c] == 0){
             moveCells([r,c],[r+1,c] );
-            moveBox( [r,c], [r-+1,c] );
+            moveBox( [r,c], [r+1,c] );
 
         }else{
             swapCells( [r,c], [r+1,c] );
